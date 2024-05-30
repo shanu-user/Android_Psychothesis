@@ -5,5 +5,9 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="TransparentToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="background">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
     <style name="Theme.Psychothesis" parent="Base.Theme.Psychothesis" />
 </resources>
