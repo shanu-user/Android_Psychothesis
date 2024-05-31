@@ -91,7 +91,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="25dp"
             android:fontFamily="@font/gothic_a1_medium"
-            android:text="Hi Sachin!"
+            android:text="Check your last moods"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.071"
@@ -145,11 +145,22 @@
                 android:background="@drawable/rounded_corners" />
         </LinearLayout>
     </HorizontalScrollView>
+    <!--
     <LinearLayout
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="245dp"
-        android:background="@drawable/color_borders">
+        android:background="@drawable/color_borders"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="573dp">
 
     </LinearLayout>
+    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
